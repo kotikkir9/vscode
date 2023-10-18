@@ -33,5 +33,30 @@
     "[svelte]": {
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Dark+",
+
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Leader>", "f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before": ["<Leader>", "q"],
+            "commands": ["editor.action.commentLine"]
+        },
+        {
+            "before": ["<tab>"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<shift+tab>"],
+            "commands": [":tabprev"]
+        },
+        {
+            "before": ["<leader>", "x"],
+            "commands": [":tabclose"]
+        }
+    ]
 }
