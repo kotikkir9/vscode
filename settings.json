@@ -1,23 +1,30 @@
 {
     "files.autoSave": "onFocusChange",
     "files.exclude": {
-        "**/.settings": true,
-        "**/.vscode": true
+        "**/.settings": true
+        // "**/.vscode": true
     },
 
     "terminal.integrated.tabs.enabled": true,
 
-    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "workbench.iconTheme": "bearded-icons",
     "workbench.productIconTheme": "material-product-icons",
-    "workbench.tree.indent": 20,
+    "workbench.tree.indent": 24,
+    "workbench.editor.showIcons": false,
     "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#00f7ff"
+        "tree.indentGuidesStroke": "#68fa06",
+        "activityBarBadge.background": "#f84339"
     },
 
-    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.fontSize": 13,
+    "editor.mouseWheelZoom": true,
+    "editor.inlayHints.enabled": "onUnlessPressed",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [100, 120],
+    "editor.bracketPairColorization.enabled": false,
+    "editor.tabSize": 4,
 
     "explorer.compactFolders": false,
     "explorer.sortOrder": "type",
@@ -34,7 +41,6 @@
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Default Dark+",
 
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -47,16 +53,74 @@
             "commands": ["editor.action.commentLine"]
         },
         {
-            "before": ["<tab>"],
+            "before": ["<Leader>", "l"],
             "commands": [":tabnext"]
         },
         {
-            "before": ["<shift+tab>"],
+            "before": ["<Leader>", "tab"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<Leader>", "h"],
             "commands": [":tabprev"]
         },
         {
-            "before": ["<leader>", "x"],
+            "before": ["<leader>", "b", "d"],
             "commands": [":tabclose"]
         }
-    ]
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "j"],
+            "commands": ["extension.vim_escape"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Leader>", "q"],
+            "commands": ["editor.action.commentLine"]
+        }
+    ],
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "markdown-preview-enhanced.revealjsTheme": "league.css",
+    "markdown-preview-enhanced.previewTheme": "monokai.css",
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.detectIndentation": false,
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "clang-format.fallbackStyle": "Microsoft",
+    "explorer.autoReveal": false,
+    "zig.zls.path": "zls",
+    "zig.initialSetupDone": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "git.openRepositoryInParentFolders": "always",
+    "editor.wordWrap": "off",
+    "continue.telemetryEnabled": false,
+    "continue.enableTabAutocomplete": false,
+    "zig.path": "zig",
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "workbench.editorAssociations": {
+        "*.dll": "hexEditor.hexedit",
+        "*.sqlite3": "sqlite3-editor.editor",
+        "*.sqlite": "sqlite3-editor.editor"
+    },
+    "clangd.fallbackFlags": [
+        "-IC:/Program Files/mingw64/x86_64-w64-mingw32/include"
+    ],
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "symbols.hidesExplorerArrows": false,
+    "vssolution.solutionExplorerIcons": "current-theme",
 }
