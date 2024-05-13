@@ -7,6 +7,7 @@
 
     "terminal.integrated.tabs.enabled": true,
 
+    "workbench.colorTheme": "JetBrains Darcula Theme",
     "workbench.iconTheme": "bearded-icons",
     "workbench.productIconTheme": "material-product-icons",
     "workbench.tree.indent": 24,
@@ -16,6 +17,7 @@
         "activityBarBadge.background": "#f84339"
     },
 
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.mouseWheelZoom": true,
     "editor.inlayHints.enabled": "onUnlessPressed",
@@ -25,9 +27,11 @@
     "editor.rulers": [100, 120],
     "editor.bracketPairColorization.enabled": false,
     "editor.tabSize": 4,
+    "editor.detectIndentation": false,
 
     "explorer.compactFolders": false,
     "explorer.sortOrder": "type",
+    "explorer.sortOrderLexicographicOptions": "upper",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
 
@@ -81,20 +85,16 @@
             "commands": ["editor.action.commentLine"]
         }
     ],
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
-    "markdown-preview-enhanced.revealjsTheme": "league.css",
-    "markdown-preview-enhanced.previewTheme": "monokai.css",
-    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
 
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    "editor.detectIndentation": false,
     "hexeditor.columnWidth": 16,
     "hexeditor.showDecodedText": true,
     "hexeditor.defaultEndianness": "little",
@@ -120,7 +120,6 @@
     "clangd.fallbackFlags": [
         "-IC:/Program Files/mingw64/x86_64-w64-mingw32/include"
     ],
-    "workbench.colorTheme": "JetBrains Darcula Theme",
     "symbols.hidesExplorerArrows": false,
-    "vssolution.solutionExplorerIcons": "current-theme",
+    "vssolution.solutionExplorerIcons": "current-theme"
 }
